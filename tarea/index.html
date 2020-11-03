@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<title>tarea</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
 
 	<fieldset>
 	<!--consigna 4-->
-
+	<button class="btn">boton</button>
 	</fieldset>
 
 	<fieldset>
@@ -46,13 +47,49 @@
 
 	<fieldset>
 	<!--consigna 6-->
+	<button onclick="random()">click</button>
+	<span id="alea"></span>
+	<script type="text/javascript" src="consigna6.js"></script>
 
+	</fieldset>
+
+	<fieldset>
+	<!--consigna 7-->
+	<button class="boton1">rojo</button>
+	<button class="boton2">azul</button>
+	<button class="boton3">amarillo</button>
 	</fieldset>
 	<fieldset>
 	<!--consigna 8-->
+ 	nombre:<input id="nombre">
+	apellido:<input id="apellido">
+	<button type="button" onclick="datos()">Enviar</button>
+	<p id="saludo"></p>
 	<script type="text/javascript" src="consigna8.js"></script>
+
 	</fieldset>
 
+	<fieldset>
+	<!--consigna 9-->
+	fecha de nacimiento:<input id="edad">
 
+	<button type="button" onclick="calcuedad()">enviar</button>
+	<p id="resultado"></p>
+	<script type="text/javascript" src="consigna9.js"></script>
+
+
+	</fieldset>
+	<fieldset>
+	<!--consigna 10-->
+	<form name="bot">
+	opcion1: <input type="radio" name="input_radio" checked value="el valor es: 1">
+	<br>
+	opcion2: <input type="radio" name="input_radio" value="el valor es: 2 ">
+	<br>
+	opcion3: <input type="radio" name="input_radio" value="el valor es: 3">
+	<input type="button" name="btn" value="validar" onclick="botones();">
+	<script type="text/javascript" src="consigna10.js"></script>
+	</fieldset>
+	</form>
 </body>
 </html>
