@@ -1,8 +1,9 @@
 function calcuedad() {
 	// consigna 9...
-	var edad= document.getElementById('edad').value;
-	x=2020;
-	var res= parseInt(x) - parseInt(edad);
+	let edad= document.getElementById('edad').value;
+	let año= new Date();
+
+	let res= año.getFullYear() - edad;
 	document.getElementById('resultado').innerHTML = "tienes:" +"" +res+ " " +"años";
 
 }
